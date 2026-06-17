@@ -293,6 +293,42 @@
   .faq summary .pl::after{left:10px;top:2px;bottom:2px;width:2px;transition:opacity .2s}
   .faq details[open] summary .pl::after{opacity:0}
   .faq .ans{padding:0 4px 24px;color:var(--ink-soft);font-size:1.02rem;line-height:1.62;max-width:66ch}
+
+  /* Placement mockups */
+  .pic.mk{background:#fff;border:1px solid var(--line);padding:10px;display:block;overflow:hidden;color:var(--ink)}
+  .mk .im,.mk .img{background-size:cover;background-position:center}
+  /* Google Shopping */
+  .mk-g .gbar{display:flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:.66rem;color:var(--ink-soft)}
+  .mk-g .gbar .q{flex:1}
+  .mk-g .gbar svg{width:13px;height:13px;flex:none}
+  .mk-g .gtabs{display:flex;gap:11px;font-size:.6rem;color:var(--ink-soft);padding:7px 2px;border-bottom:1px solid var(--line)}
+  .mk-g .gtabs .on{color:#1a73e8;font-weight:700}
+  .mk-g .ggrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px}
+  .mk-g .gi{border:1px solid var(--line);border-radius:7px;overflow:hidden}
+  .mk-g .gi .im{height:38px}
+  .mk-g .gi .pr{font-size:.62rem;font-weight:700;padding:4px 5px 0}
+  .mk-g .gi .st{font-size:.5rem;color:#1a73e8;padding:1px 5px 4px}
+  /* Meta / Instagram */
+  .mk-m{display:flex;flex-direction:column;height:100%}
+  .mk-m .ih{display:flex;align-items:center;gap:6px;padding-bottom:7px}
+  .mk-m .av{width:19px;height:19px;border-radius:50%;background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);flex:none}
+  .mk-m .nm{font-size:.6rem;font-weight:700;line-height:1.15}
+  .mk-m .nm small{display:block;font-weight:400;color:var(--ink-soft);font-size:.52rem}
+  .mk-m .img{flex:1;border-radius:6px;min-height:54px}
+  .mk-m .act{display:flex;gap:10px;padding:7px 1px 4px}
+  .mk-m .act svg{width:15px;height:15px;color:var(--ink)}
+  .mk-m .cap{font-size:.58rem;line-height:1.35}
+  .mk-m .cap b{font-size:.7rem}
+  /* Unlim catalog */
+  .mk-u .ub{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+  .mk-u .ub .lg{width:16px;height:18px;flex:none}
+  .mk-u .ub .se{flex:1;background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;font-size:.54rem;color:var(--ink-soft);padding:4px 9px}
+  .mk-u .ug{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .mk-u .uc{border:1px solid var(--line);border-radius:7px;overflow:hidden}
+  .mk-u .uc .im{height:32px;position:relative}
+  .mk-u .uc .bg{position:absolute;top:3px;left:3px;background:var(--green);color:#fff;font-size:.46rem;font-weight:700;padding:1px 5px;border-radius:999px}
+  .mk-u .uc .pr{font-size:.6rem;font-weight:700;padding:3px 6px 0}
+  .mk-u .uc .tt{font-size:.5rem;color:var(--ink-soft);padding:0 6px 4px}
 </style>
 </head>
 <body>
@@ -355,17 +391,42 @@
     </div>
     <div class="place-grid">
       <div class="place">
-        <div class="pic">Скриншот: товарная выдача Google&nbsp;Shopping</div>
+        <div class="pic mk mk-g" aria-label="Пример выдачи Google Shopping">
+          <div class="gbar"><svg viewBox="0 0 24 24" fill="none"><path d="M23 12.2c0-.8-.1-1.6-.2-2.3H12v4.5h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.6z" fill="#4285F4"/><path d="M12 24c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3A11.9 11.9 0 0 0 12 24z" fill="#34A853"/><path d="M5.6 14.7a7 7 0 0 1 0-4.5v-3H1.8a12 12 0 0 0 0 10.6z" fill="#FBBC05"/><path d="M12 4.8c1.7 0 3.2.6 4.4 1.7l3.3-3.3A11.9 11.9 0 0 0 1.8 6.7l3.8 3a7 7 0 0 1 6.4-4.9z" fill="#EA4335"/></svg><span class="q">купить смартфон</span><svg viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg></div>
+          <div class="gtabs"><span>Все</span><span class="on">Покупки</span><span>Картинки</span><span>Видео</span></div>
+          <div class="ggrid">
+            <div class="gi"><div class="im" style="background:linear-gradient(135deg,#cfe0ff,#9bbcff)"></div><div class="pr">₾ 1 290</div><div class="st">Unlim.ge</div></div>
+            <div class="gi"><div class="im" style="background:linear-gradient(135deg,#ffe1c2,#ffc187)"></div><div class="pr">₾ 890</div><div class="st">Unlim.ge</div></div>
+            <div class="gi"><div class="im" style="background:linear-gradient(135deg,#d6f5e3,#9fe3bf)"></div><div class="pr">₾ 2 450</div><div class="st">Unlim.ge</div></div>
+          </div>
+        </div>
         <div class="pi"><span class="lg"><svg viewBox="0 0 24 24" fill="none"><path d="M23 12.2c0-.8-.1-1.6-.2-2.3H12v4.5h6.2a5.3 5.3 0 0 1-2.3 3.5v2.9h3.7c2.2-2 3.4-5 3.4-8.6z" fill="#4285F4"/><path d="M12 24c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.8v3A11.9 11.9 0 0 0 12 24z" fill="#34A853"/><path d="M5.6 14.7a7 7 0 0 1 0-4.5v-3H1.8a12 12 0 0 0 0 10.6z" fill="#FBBC05"/><path d="M12 4.8c1.7 0 3.2.6 4.4 1.7l3.3-3.3A11.9 11.9 0 0 0 1.8 6.7l3.8 3a7 7 0 0 1 6.4-4.9z" fill="#EA4335"/></svg></span><b>Google Shopping</b></div>
         <div class="pd">Первая страница поиска Google. Покупатель вводит запрос — и сразу видит ваш товар: фото, цену, магазин.</div>
       </div>
       <div class="place">
-        <div class="pic">Скриншот: карточка товара в ленте Instagram / Facebook</div>
+        <div class="pic mk mk-m" aria-label="Пример поста в ленте Instagram">
+          <div class="ih"><span class="av"></span><span class="nm">unlim.ge<small>Реклама</small></span></div>
+          <div class="img" style="background:linear-gradient(135deg,#2563eb,#09ad64)"></div>
+          <div class="act">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="cap"><b>₾ 159</b> · Кроссовки — доставка по Грузии</div>
+        </div>
         <div class="pi"><span class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#E0218A" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.2" fill="#E0218A" stroke="none"/></svg></span><b>Meta Ads</b></div>
         <div class="pd">Лента Instagram и Facebook. Таргет на аудиторию, которая уже интересовалась похожими товарами.</div>
       </div>
       <div class="place">
-        <div class="pic">Скриншот: каталог Unlim.ge с товарами магазина</div>
+        <div class="pic mk mk-u" aria-label="Пример каталога Unlim.ge">
+          <div class="ub"><svg class="lg" viewBox="0 11 16 18" fill="none"><path d="M11 21V18H16V21C16 25.4183 12.4183 29 8 29C3.58172 29 0 25.4183 0 21V18H5V21C5 22.6569 6.34315 24 8 24C9.65685 24 11 22.6569 11 21Z" fill="#09AD64"/><path d="M0 11V15H5V11H0Z" fill="#3875EA"/><path d="M11 11V15H16V11H11Z" fill="#CC5849"/></svg><span class="se">Поиск товаров…</span></div>
+          <div class="ug">
+            <div class="uc"><div class="im" style="background:linear-gradient(135deg,#7eb6ff,#3b82f6)"><span class="bg">Новый</span></div><div class="pr">₾ 290</div><div class="tt">Электроника</div></div>
+            <div class="uc"><div class="im" style="background:linear-gradient(135deg,#ffd59e,#ff9d54)"></div><div class="pr">₾ 79</div><div class="tt">Одежда</div></div>
+            <div class="uc"><div class="im" style="background:linear-gradient(135deg,#a7e9c5,#22c55e)"></div><div class="pr">₾ 450</div><div class="tt">Для дома</div></div>
+            <div class="uc"><div class="im" style="background:linear-gradient(135deg,#e3c8ff,#a855f7)"><span class="bg">−20%</span></div><div class="pr">₾ 230</div><div class="tt">Детям</div></div>
+          </div>
+        </div>
         <div class="pi"><span class="lg"><svg viewBox="0 11 16 18" fill="none"><path d="M11 21V18H16V21C16 25.4183 12.4183 29 8 29C3.58172 29 0 25.4183 0 21V18H5V21C5 22.6569 6.34315 24 8 24C9.65685 24 11 22.6569 11 21Z" fill="#09AD64"/><path d="M0 11V15H5V11H0Z" fill="#3875EA"/><path d="M11 11V15H16V11H11Z" fill="#CC5849"/></svg></span><b>Каталог Unlim.ge</b></div>
         <div class="pd">21 300+ покупателей в месяц уже здесь. Ваш новый товар с гарантией, доставкой и онлайн-оплатой выигрывает рядом с частными объявлениями.</div>
       </div>
